@@ -5,25 +5,135 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Registration</title>
     <style>
-        table,tr{
+        table,td{
             border:1px solid black;
+            border-collapse: collapse;
+           
         }
         h3{
             text-align: center;
         }
+        
+    
     </style>
+    <link rel="stylesheet" href="./register.css">
 </head>
 <body>
+    <form action="file.java">
+    <h3>Application Registration form</h3><hr>
+    <table style="width: 100%;">
+        <p style="background-color: rgb(165, 180, 180);">Applicant Details:
+         
+        </tr>        
+        <div class="first name">
 
-    <table style="width: 100%; height: 100%;">
-        <tr style="width: 100%;">
-        <tr>
-            <td><h3>Application Registration form</h3></td>
-        </tr>
-        <tr>
-            <td>Name</td>
-        </tr>
-    </tr>
+         <tr>
+            <td style="width:50%;">First Name</td>
+            <td>
+               <select name="gender" id="gender">
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <form>
+
+                    <input type="text" name="fn" id="fn" placeholder="enter first name">
+                </form>
+            </select>
+                
+            </td>   
+        </div>
+        <div class="last name">
+            <tr>
+                <td>Last Name</td>
+                <td>
+                   
+                    <form action="">
+                         <input type="text" name="ln" id="ln" placeholder="enter last name">
+                        </form>
+
+                    </select>
+                   
+                </td>
+            </tr>
+        </div>
+        <div class="father">
+            <tr>
+                <td>Father Name</td>
+                <td>
+                <form action="">
+                    <input type="text" name="" id="" value="Mr" readonly size="1%;">
+                    <input type="text" name="father" id="father" placeholder="father name">
+               
+            </form>
+       
+        </td>
+            
+            
+           
+            </tr>
+        </div>
+        <div class="mother">
+            <tr>
+                <td>Mother Name</td>
+                <td>
+                    
+                        <form action="">
+                            <input type="text" name="" id="" value="Mrs" readonly size="1px">
+                            <input type="text" name="" id=""placeholder="mother name">
+                        </form>
+                    </select>
+                </td>
+            </tr>
+        </div>
+        <div class="email">
+            <tr>
+                <td>Email id</td>
+                <td>
+                    
+                    <form action="file.java"><input type="email" name="" id="" placeholder="enter your email">@<input type="text" name="" id="" value="gmail.com" readonly >
+                    </form>
+    
+                </td>
+            </tr>
+        </div>
+        <div class="gender">
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="m" id="m">Male
+                    <input type="radio" name="m" id="f">Female
+                </td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td>Phone</td>
+                <td><input type="number" name="" id="" minlength=10 maxlength=10></td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <form action=""><input type="checkbox" name="" id="">Html
+                    <input type="checkbox" name="" id="">CSS
+                    <input type="checkbox" name="" id="">Java
+                    <tr>
+                        <td>File</td>
+                        <td><input type="file" name="" id=""></td>
+                    </tr>
+                    </form>
+                    
+                </td>
+            </tr>
+        </div>
+        
+
+        
+       
+        
+    
     </table>
+    <br><br>
+   <button>submit</button>
+    </form>
 </body>
 </html>
